@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <div className="ui fluid ">
+        <div className="ui fluid" style={{ marginBottom: "20px" }}>
           <div className="ui teal two item inverted menu">
             <Link className="item" to="/">
               Home
@@ -21,7 +21,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<ProductList />} />
           <Route path="/addproduct" element={<AddProduct />} />
-          <Route path="/editproduct/" element={<EditProduct />} />
+          <Route path="/editproduct/:id" element={<EditProduct />} />
         </Routes>
       </BrowserRouter>
     </div>
